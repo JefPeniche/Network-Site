@@ -1,0 +1,111 @@
+:root{
+    --titles: "Poppins", sans-serif;
+    --text: "Merriweather", sans-serif;
+}
+
+
+*, *:before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 146px 12vw 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: var(--titles);
+    font-weight: 300;
+    margin: 0 5%;
+}
+
+.text, .greenTitle {
+    font-family: var(--text);
+}
+
+.container span {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.greenTitle {
+    font-size: 1.5rem;
+    color: #3B858B;
+    font-weight: 600;
+    margin: 3% 0;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    max-height: 600px;
+    max-width: 100%;
+}
+
+.imageContainer {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+}
+
+.imageContainer img {
+    object-fit: cover;
+}
+
+.information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.icons figure {
+    margin-top: 10%;
+    margin-right: 15px;
+}
+
+.buttons {
+    width: 100%;
+    justify-content: flex-end;
+    align-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons button {
+    margin: 0 4%;
+    border: none;
+    background-color: none;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
+
+.buttons button:focus {
+    outline: #F5F5F5;
+}
