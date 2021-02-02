@@ -18,53 +18,49 @@
         </ul>
     </nav>
     <header class="article-header">
-        <p class="date">Domingo 31 de enero del 2021.</p>
-        <h1 class="title">¿Qué %!@!#/ son los sockets!? Lorem ipsum dolor sit amet consectetur.</h1>
+        <p class="date">Martes 02 de febrero del 2021.</p>
+        <h1 class="title">¿Qué es un socket?</h1>
         <p class="subject">Redes y seguridad de computadoras</p>
     </header>
-    <img class="main-image" src="images/Vector.svg" alt="Main illustration">
+    <section class="image-container">
+            <img class="main-image" src="./images/cliente_servidor_java.gif" alt="Main Image">
+    </section>
     <article class="article-body">
         <p class="article-parragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Enim dicta velit nam, aut quae sapiente non quibusdam debitis quas, 
-            ipsam optio ullam architecto harum dolores beatae doloribus expedita! Facere, veritatis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Natus aperiam totam ab nemo tenetur, a quas nam amet optio ducimus porro incidunt quod beatae, 
-            delectus culpa maiores quaerat reiciendis illum.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Quae quibusdam ex dolores beatae dignissimos quidem reprehenderit, 
-            dolore sunt dolor exercitationem non nam voluptas illum itaque, adipisci nesciunt harum iure. 
-            Quibusdam?
+            Un socket en programación es un túnel de comunicación que ayuda a que 2 aplicaciones se comuniquen, los
+            sockets son la base de internet y de sus protocolos como HTTP, FTP, SMTP, etc.Los sockets son la base de
+            los protocolos de internet, pero también los podemos utilizar para sacarle provecho, es decir mediante
+            sockets podemos hacer que dos aplicaciones se comuniquen entre sí.
+        </p>
+        <p class="article-parragraph">
+            Para que las aplicaciones que utilizan sockets puedan comunicarse entre sí se necesita de ciertos puntos
+            importantes. Los cuales son:
         </p>
         <ul class="article-list">
-            <li class="article-item"><span class="item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus</span></li>
-            <li class="article-item"><span class="item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, laborum!</span></li>
-            <li class="article-item"><span class="item-text">orem ipsum dolor sit amet consectetur, adipisicing elit.</span></li>
+            <li class="article-item"><span class="item-text"><strong>Servidor: </strong>El servidor es el que siempre escucha (o está pendiente) por un puerto, por donde se
+                transmiten los datos, lo que el cliente diga y si tiene respuesta, entonces responde.</span></li>
+            <li class="article-item"><span class="item-text"><strong>Cliente: </strong>Normalmente el cliente se conecta al servidor por el puerto y le empieza a enviar peticiones y
+                siempre espera una respuesta.</span></li>
+            <li class="article-item"><span class="item-text"><strong>Puerto: </strong>Este elemento es donde pasan los datos, realmente es por un puerto de entrada para el servidor y
+                un puerto de salida para el cliente.</span></li>
+            <li class="article-item"><span class="item-text"> <strong>Protocolo: </strong>Es el conjunto de reglas que existen entre dos o más aplicaciones para poder comunicarse
+                entre sí.</span></li>
         </ul>
         <p class="article-parragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Enim dicta velit nam, aut quae sapiente non quibusdam debitis quas, 
-            ipsam optio ullam architecto harum dolores beatae doloribus expedita! Facere, veritatis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Natus aperiam totam ab nemo tenetur, a quas nam amet optio ducimus porro incidunt quod beatae, 
-            delectus culpa maiores quaerat reiciendis illum.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Quae quibusdam ex dolores beatae dignissimos quidem reprehenderit, 
-            dolore sunt dolor exercitationem non nam voluptas illum itaque, adipisci nesciunt harum iure. 
-            Quibusdam?
+            Las aplicaciones con Sockets puede tener dos formas de comunicarse entre sí:
         </p>
-        <img class="article-image" src="images/Vector.svg" alt="Network illustration">
+        <ul class="article-list">
+            <li class="article-item"><span class="item-text">Remota</span></li>
+            <li class="article-item"><span class="item-text">Local</span></li>
+        </ul>
+        <p class="article-parragraph">Los sockets son una característica universal en cualquier lenguaje de programación, y además sin límites,
+            una aplicación hecha en PHP se puede comunicar con otra hecha en JAVA y viceversa, o una aplicación
+            hecha en Python se puede comunicar con una hecha C# .NET.
+        </p>
         <p class="article-parragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Enim dicta velit nam, aut quae sapiente non quibusdam debitis quas, 
-            ipsam optio ullam architecto harum dolores beatae doloribus expedita! Facere, veritatis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Natus aperiam totam ab nemo tenetur, a quas nam amet optio ducimus porro incidunt quod beatae, 
-            delectus culpa maiores quaerat reiciendis illum.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Quae quibusdam ex dolores beatae dignissimos quidem reprehenderit, 
-            dolore sunt dolor exercitationem non nam voluptas illum itaque, adipisci nesciunt harum iure. 
-            Quibusdam?
+            Gracias a esto tenemos navegadores, clientes de correo, clientes FTP, etc que funcionan y se comunican
+            con los servidores sin importar el sistema operativo en que funcionen o lenguaje de programación en que
+            estén programados.
         </p>
     </div>
     <div class="divisor">
@@ -74,9 +70,9 @@
         <span class="dot"></span>
     </div>
     <div class="tags">
-        <a class="tag" href="#">TAG 1</a>
-        <a class="tag" href="#">TAG LARGE 1</a>
-        <a class="tag" href="#">Software Example</a>
+        <a class="tag" href="#">Sockets</a>
+        <a class="tag" href="#">Programación</a>
+        <a class="tag" href="#">Software</a>
     </div>
 </body>
 </html>
