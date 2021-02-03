@@ -11,18 +11,14 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    font-family: var(--titles);
+    font-size: 8px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    padding: 146px 12vw 50px;
+    align-items: center;
 }
 
 .title {
@@ -30,7 +26,6 @@ body {
     font-size: 4.5rem;
     font-family: var(--titles);
     font-weight: 300;
-    margin: 0 5%;
 }
 
 .text, .greenTitle {
@@ -39,7 +34,8 @@ body {
 
 .container span {
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 30px;
+    font-size: 1rem;
 }
 
 .greenTitle {
@@ -54,12 +50,16 @@ body {
     grid-template-columns: 1fr 1fr;
     border-radius: 15px;
     background-color: #F5F5F5;
-    max-height: 600px;
-    max-width: 100%;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+nav{
+    margin-right: 200px;
+    margin-bottom: 40px;
 }
 
 .imageContainer {
-    display: inline-block;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -67,7 +67,7 @@ body {
 }
 
 .imageContainer img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .information {

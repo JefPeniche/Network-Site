@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades de los sockets</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles/article.css">
+    <link rel="stylesheet" href="styles/menu.css">
+
+</head>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item"><a class="menu-link" href="index.html">Inicio</a> </li>
+            <li class="menu-item"><a class="menu-link menu-active" href="authors.html"> Autores</a></li>
+        </ul>
+    </nav>
+    <header class="article-header">
+        <p class="date">Martes 02 de febrero del 2021.</p>
+        <h1 class="title">¿Cuáles son las funcionalidades de los sockets?</h1>
+        <p class="subject">Redes y seguridad de computadoras</p>
+    </header>
+    <section class="image-container">
+            <img class="main-image" src="./images/cliente_servidor_java.gif" alt="Main Image">
+    </section>
+    <article class="article-body">
+        <p class="article-parragraph">
+            Un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte y
+             un par de números de puerto local y remoto. Para que dos programas puedan comunicarse entre sí es 
+             necesario que se cumplan ciertos requisitos:
+        </p>
+        <ul class="article-list">
+            <li class="article-item"><span class="item-text">Que un programa sea capaz de localizar al otro.</span></li>
+            <li class="article-item"><span class="item-text">Que ambos programas sean capaces de intercambiarse cualquier
+                 secuencia de octetos, es decir, datos relevantes a su finalidad.</span></li>
+        </ul>
+        <p class="article-parragraph">
+            Para ello son necesarios los tres recursos que originan el concepto de socket:
+        </p>
+        <ul class="article-list">
+            <li class="article-item"><span class="item-text">Un protocolo de comunicaciones, que permite el intercambio de octetos.</span></li>
+            <li class="article-item"><span class="item-text">Un par de direcciones del Protocolo de Red (Dirección IP, si se utiliza 
+                el Protocolo TCP/IP), que identifica la computadora de origen y la remota.</span></li>
+            <li class="article-item"><span class="item-text">Un par de números de puerto, que identifica a un programa dentro de cada computadora.</span></li>
+        </ul>
+        <p class="article-parragraph">
+            Los sockets permiten implementar una arquitectura cliente-servidor o peer to peer. 
+            La comunicación debe ser iniciada por uno de los programas que se denomina programa cliente. 
+            El segundo programa espera a que otro inicie la comunicación, por este motivo se denomina programa 
+            servidor.
+        </p>
+        <p class="article-parragraph">
+            Un socket es un proceso o hilo existente en la máquina cliente y en la máquina servidora, 
+            que sirve en última instancia para que el programa servidor y el cliente lean y escriban la 
+            información. Esta información será la transmitida por las diferentes capas de red.
+        </p>
+        <p class="article-parragraph">
+            Cuando un cliente conecta con el servidor se crea un nuevo socket, de esta forma, el servidor 
+            puede seguir esperando conexiones en el socket principal y comunicarse con el cliente conectado, 
+            de igual manera se establece un socket en el cliente en un puerto local.
+        </p>
+        <p class="article-parragraph">
+            Una aplicación servidor normalmente escucha por un puerto específico esperando una petición de 
+            conexión de un cliente, una vez que se recibe, el cliente y el servidor se conectan de forma que 
+            les sea posible comunicarse entre ambos. Durante este proceso, el cliente es asignado a un número de 
+            puerto, mediante el cual envía peticiones al servidor y recibe de este las respuestas correspondientes.
+        </p>
+        <p class="article-parragraph">
+            Similarmente, el servidor obtiene un nuevo número de puerto local que le servirá para poder continuar 
+            escuchando cada petición de conexión del puerto original. De igual forma une un socket a este puerto local.
+        </p>
+        <p class="article-parragraph">
+            En la actualidad existen varios tipos de socket y cada uno por lo regular se asocia a un tipo de protocolo, por ejemplo:
+        </p>
+        <ul class="article-list">
+            <li class="article-item"><span class="item-text"><strong>SOCK_STREAM: </strong>está asociado al protocolo TCP, este brinda seguridad en la 
+                transmisión de datos, seguridad en la recepción, en la integridad y en la secuencia, entre otros.</span></li>
+            <li class="article-item"><span class="item-text"><strong>SOCK_DGRAM: </strong>está asociado al protocolo UDP, e indica que los paquetes 
+                viajarán en tipo datagramas, el cual tiene una comunicación asíncrona.</span></li>
+        </ul>
+        <p class="article-parragraph">
+            Las propiedades de un socket dependen de las características del protocolo en el que se implementan. Generalmente la comunicación con sockets 
+            se realiza mediante un protocolo de la familia TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet). Los dos más utilizados 
+            son: TCP (Protocolo de Control de Transmisión) y UDP (Protocolo de Datagrama de Usuario). 
+
+            Cuando se implementan con el protocolo TCP, los sockets tienen las siguientes propiedades:
+        </p>
+        <ul class="article-list">
+            <li class="article-item"><span class="item-text">Orientado a conexión.</span></li>
+            <li class="article-item"><span class="item-text">Se garantiza la transmisión de todos los octetos sin errores ni omisiones.</span></li>
+            <li class="article-item"><span class="item-text">Se garantiza que todo octeto llegará a su destino en el mismo orden en que se ha transmitido.
+                Estas propiedades son muy importantes para garantizar la corrección de los programas que tratan la información.</span></li>
+        </ul>
+        <p class="article-parragraph">
+            El protocolo UDP es un protocolo no orientado a la conexión. Sólo se garantiza que si un mensaje llega, llegue bien. En ningún caso 
+            se garantiza que llegue o que lleguen todos los mensajes en el mismo orden que se mandaron. Esto lo hace adecuado para el envío de 
+            mensajes frecuentes pero no demasiado importantes, como por ejemplo, mensajes para los refrescos (actualizaciones) de un gráfico.
+        </p>
+    </div>
+    <div class="divisor">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="tags">
+        <a class="tag" href="#">Sockets</a>
+        <a class="tag" href="#">Programación</a>
+        <a class="tag" href="#">Software</a>
+    </div>
+</body>
+</html>
